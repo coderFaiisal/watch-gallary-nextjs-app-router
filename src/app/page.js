@@ -1,6 +1,7 @@
 import Products from "@/components/UI/Products";
 
 const HomePage = async () => {
+  // Static Site Generation (SSG) data fetching
   const res = await fetch("http://localhost:5000/watches", {
     cache: "force-cache",
     next: { revalidate: 30 },
